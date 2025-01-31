@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: #161616;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.logo img {
+    display: block;
+    position: absolute;
+    width: 150px;
+    left: 5%;
+    background: none;
+    top: 10px;
+}
+
+.fondo img {
+    width: 100%;
+    height: auto;
+}
+
+.horarios {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10%; 
+    margin-top: 10%;
+}
+
+.horarios .inicio,
+.horarios .fin {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #161616;
+    border: 2px solid #c70be0;
+    box-shadow: 0 0 10px #da0606, 0 0 20px #da0606, 0 0 30px #c70be0;
+}
+
+.horarios .text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 20px; 
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 80%;
+    max-width: 300px;
+    margin: 80px auto 20px;
+    border: 2px solid #c70be0;
+    color: #fff;
+    background-color: #b6034d;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    box-shadow: 0 0 10px #d6006b, 0 0 20px #d6006b, 0 0 30px #c70be0;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.ubi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto 20px;
+    gap: 10px;
+}
+
+.ubi iframe {
+    width: 90%;
+    max-width: 300px;
+    height: 200px;
+}
+
+.text2 {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.text2 img {
+    width: 40px;
+    margin-top: 5px;
+}
+
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 60px;
+    height: 60px;
+    background: none
+}
+
+
+.derechos {
+    background-color: #7c0000;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 40px;
+        background: none;
+    }
+
+    .fondo img{
+        width: 100%;
+        height: auto;
+    }
+
+    .text {
+        font-size: 15px;
+        margin-top: 10%;
+    }
+
+    .horarios .inicio,
+    .horarios .fin {
+        width: 70px;
+        height: 70px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+        margin-top: 80px;
+    }
+
+    .ubi iframe {
+        width: 100%;
+    }
+
+    .ubi{
+        margin-top: 50px
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 40px;
+        background: none;
+    }
+
+    .horarios .text {
+        font-size: 12px;
+    }
+
+    .horarios {
+        align-items: center;
+        gap: 20px;
+    }
+
+    .horarios .inicio,
+    .horarios .fin {
+        width: 60px;
+        height: 60px;
+        font-size: 12px;
+    }
+
+    button {
+        width: 90%;
+        margin-top: 80px;
+        font-size: 14px;
+    }
+
+    .ubi {
+        margin-top: 50px
+    }
+}
