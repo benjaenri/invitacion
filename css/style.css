@@ -58,6 +58,15 @@ body {
     margin: 0 20px; 
 }
 
+
+.mp {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 70px 20px; 
+}
+
 button {
     font-size: 16px;
     padding: 10px 20px;
