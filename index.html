@@ -1,6 +1,79 @@
-<script>
-function mercadopago() {
-    const mpURL = "https://link.mercadopago.com.ar/aporteparalacasa";
-    window.open(mpURL, "_blank");
-}
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <title>Benja y sus 18°</title>
+</head>
+<body>
+
+    <div class="fondo">
+        <img src="img/cumple19.png" width="100%">
+    </div>
+
+    <div class="horarios">
+        <div class="inicio">21 PM</div>
+        <div class="text">❮ HORARIOS ❯</div>
+        <div class="fin">03 AM</div>
+    </div>
+
+    <div class="mp">
+        <p>❤ Tu presencia ya es un regalo,podes aportar lo que puedas para la casa ❤</p><br>
+        <div class="mercadopago" id="mercadopago">
+        <button onclick="mercadopago()">Aporte para la casa</button>
+    </div>
+
+    <div class="btnconfirmar" id="btn-confirmar">
+        <button onclick="unirseYConfirmar()">Confirmar Asistencia</button>
+    </div>
+    
+
+    <script>
+        function unirseYConfirmar() {
+        const grupoURL = "https://chat.whatsapp.com/IcthKyoYY67HAQROUeHT1a"; // Reemplaza con tu enlace del grupo
+        const mensaje = "Hola, confirmo mi asistencia al cumpleaños 🎉."; 
+        
+        // Abrir el grupo de WhatsApp en una nueva pestaña
+        window.open(grupoURL, '_blank');
+
+        // Mostrar una alerta para que el usuario sepa qué hacer
+        setTimeout(() => {
+            alert("Después de unirte al grupo, vuelve aquí para enviar tu confirmación.");
+            
+            // Abrir WhatsApp con el mensaje (el usuario debe enviarlo manualmente)
+            const whatsappURL = `https://api.whatsapp.com/send?text=${encodeURIComponent(mensaje)}`;
+            window.open(whatsappURL, '_blank');
+        }, 3000); // Espera 3 segundos antes de abrir el mensaje
+    }
+
+        function mercadopago() {
+        const mpURL = "https://link.mercadopago.com.ar/aporteparalacasa";
+        window.open(mpURL, "_blank");
+    }
+
+    </script>
+
+    <div class="ubi">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4674516031364!2d-58.659567525147295!3d-34.59233935689588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbfe750ac6c15%3A0xcf097651ec1af0ce!2sQuinta%20los%20pinos%20hurlingham!5e0!3m2!1ses-419!2sar!4v1768953231443!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </iframe>
+
+        
+    </div>
+
+    <div class="whatsapp-container">
+        <a href="https://wa.me/5491141469262" target="_blank" class="whatsapp-float">
+            <img src="img/logo.whatsapp.png" alt="WhatsApp">
+        </a>
+    </div>
+
+
+
+    <div class="derechos">
+        <p>© 2026 Benja-Enriquez. Derechos Reservados.</p>
+    </div>
+
+</body>
+</html>
