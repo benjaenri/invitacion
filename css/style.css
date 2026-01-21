@@ -12,15 +12,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.logo img {
-    display: block;
-    position: absolute;
-    width: 150px;
-    left: 5%;
-    background: none;
-    top: 10px;
-}
-
 .fondo img {
     width: 100%;
     height: auto;
@@ -46,8 +37,8 @@ body {
     text-align: center;
     border-radius: 50%;
     background-color: #161616;
-    border: 2px solid #c70be0;
-    box-shadow: 0 0 10px #da0606, 0 0 20px #da0606, 0 0 30px #c70be0;
+    border: 2px solid #016d88;
+    box-shadow: 0 0 10px #08a8cf, 0 0 20px #36cff5, 0 0 30px #00c8fa;
 }
 
 .horarios .text {
@@ -72,14 +63,14 @@ button {
     width: 80%;
     max-width: 300px;
     margin: 80px auto 20px;
-    border: 2px solid #c70be0;
+    border: 2px solid #36cff5;      /* turquesa claro */
     color: #fff;
-    background-color: #b6034d;
+    background-color: #016d88;      /* mismo turquesa oscuro que los horarios */
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
     display: block;
-    box-shadow: 0 0 10px #d6006b, 0 0 20px #d6006b, 0 0 30px #c70be0;
+    box-shadow: 0 0 10px #08a8cf, 0 0 20px #36cff5, 0 0 30px #00c8fa;
     transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
 }
 
@@ -95,17 +86,6 @@ button {
     width: 90%;
     max-width: 300px;
     height: 200px;
-}
-
-.text2 {
-    text-align: center;
-    color: white;
-    font-size: 14px;
-}
-
-.text2 img {
-    width: 40px;
-    margin-top: 5px;
 }
 
 .whatsapp-container {
